@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader">
+    <h2>🍽️ Delicious Restaurant</h2>
+    <p>Loading...</p>
+</div>
+<header>
+    <h1>Delicious Restaurant</h1>
+    <p id="clock"></p>
+    <nav>
+        <a href="#home">Home</a>
+<a href="#menu">Menu</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+<button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h2>Welcome to Delicious Restaurant</h2>
+    <p id="status"></p>
+    <p>Fresh meals, great taste, and unforgettable moments.</p>
+    <button onclick="bookTable()">Book a Table</button>
+</section>
+<section class="menu" id="menu">
+    <h2>Our Popular Menu</h2>
+<input type="text" id="searchInput" placeholder="Search for food..." onkeyup="searchFood()">
+    <div class="menu-box">
+        <div class="food-card">
+    <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=500" alt="Jollof Rice">
+    <h3>Jollof Rice</h3>
+    <p>Served with chicken and salad.</p>
+    <h4>₦3,500</h4>
+</div>
+            <p>Served with chicken and salad.</p>
+            <h4>₦3,500</h4>
+        </div>
+
+        <div class="food-card">
+            <h3>Fried Rice</h3>
+            <p>Served with turkey and vegetables.</p>
+            <h4>₦4,000</h4>
+        </div>
+
+        <div class="food-card">
+            <h3>Pepper Soup</h3>
+            <p>Fresh spicy goat meat pepper soup.</p>
+            <h4>₦3,000</h4>
+        </div>
+    </div>
+</section>
+<section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+        Delicious Restaurant is dedicated to serving fresh, delicious meals in a warm and welcoming environment.
+        We use quality ingredients and provide excellent customer service to make every visit memorable.
+    </p>
+</section>
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>📍 Address:</strong> 25 Victoria Island, Lagos, Nigeria</p>
+    <p><strong>📞 Phone:</strong> +234 800 123 4567</p>
+    <p><strong>✉️ Email:</strong> info@deliciousrestaurant.com</p>
+</section>
+
+<footer>
+    <p>© 2026 Delicious Restaurant. All Rights Reserved.</p>
+</footer>
+<section class="reviews" id="reviews">
+    <h2>What Our Customers Say</h2>
+
+    <div class="review-box">
+        <div class="review-card">
+            <p>"The food was amazing and the service was excellent!"</p>
+            <h4>- Sarah</h4>
+        </div>
+
+        <div class="review-card">
+            <p>"One of the best restaurants I've ever visited."</p>
+            <h4>- David</h4>
+        </div>
+
+        <div class="review-card">
+            <p>"Fresh meals, beautiful environment, and friendly staff."</p>
+            <h4>- Grace</h4>
+        </div>
+    </div>
+</section>
+<section class="gallery" id="gallery">
+    <h2>Food Gallery</h2>
+
+    <div class="gallery-box">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500" alt="Food">
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500" alt="Food">
+        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500" alt="Food">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500" alt="Food">
+    </div>
+</section>
+<section class="booking">
+    <h2>Reserve a Table</h2>
+
+    <form id="bookingForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+
+        <input type="email" id="email" placeholder="Your Email" required>
+
+        <input type="number" id="guests" placeholder="Number of Guests" required>
+
+        <button type="submit">Reserve Now</button>
+    </form>
+</section>
+<section class="faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <h3>Do you offer home delivery?</h3>
+        <p>Yes, we deliver fresh meals within the city.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Can I reserve a table?</h3>
+        <p>Yes, use the reservation form on this website.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>What are your opening hours?</h3>
+        <p>We are open every day from 8:00 AM to 10:00 PM.</p>
+    </div>
+</section>
+<section class="chef">
+    <h2>Meet Our Chefs</h2>
+
+    <div class="chef-box">
+
+        <div class="chef-card">
+            <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?w=500" alt="Chef">
+            <h3>Chef John</h3>
+            <p>Head Chef</p>
+        </div>
+
+        <div class="chef-card">
+            <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=500" alt="Chef">
+            <h3>Chef Grace</h3>
+            <p>Pastry Chef</p>
+        </div>
+
+        <div class="chef-card">
+            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=500" alt="Chef">
+            <h3>Chef Daniel</h3>
+            <p>Kitchen Manager</p>
+        </div>
+
+    </div>
+</section>
+<section class="newsletter">
+    <h2>Subscribe to Our Newsletter</h2>
+    <p>Get updates on our latest meals and special discounts.</p>
+
+    <form id="newsletterForm">
+        <input type="email" id="subscriberEmail" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+</section>
+<button id="topBtn" onclick="topFunction()">⬆ Top</button>
+<script src="script.js"></script>
+
+</body>
+</html>
